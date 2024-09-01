@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة تسجيل الدخول - موقع طبخ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist (1)/bootstrap-5.1.3-dist/css/bootstrap.rtl.min.css.map">
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist (1)/bootstrap-5.1.3-dist/css/bootstrap.rtl.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe-DAVVbM8JLXZniIRoGmgH_NNuKtWPmDpvQ&s') no-repeat center center/cover;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar {
+            width: 100%;
+            margin-bottom: 100px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .navbar .nav-item a {
+            color: #333;
+            font-weight: bold;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 100px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h2 {
+            margin-bottom: 1.5rem;
+            color: #d9534f;
+            font-family: 'Courier New', monospace;
+        }
+        .login-container .form-group {
+            margin-bottom: 1rem;
+        }
+        .login-container .btn-login {
+            background-color: #d9534f;
+            border-color: #d9534f;
+            color: white;
+            font-weight: bold;
+        }
+        .login-container .btn-login:hover {
+            background-color: #c9443e;
+            border-color: #c9443e;
+        }
+        .login-container .forgot-password {
+            display: block;
+            margin-top: 1rem;
+            color: #d9534f;
+            text-decoration: none;
+        }
+        .login-container .forgot-password:hover {
+            text-decoration: underline;
+        }
+        .login-container .social-buttons {
+            margin-top: 1.5rem;
+        }
+        .login-container .social-buttons a {
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+        .login-container .social-buttons .facebook {
+            background-color: #3b5998;
+        }
+        .login-container .social-buttons .google {
+            background-color: #dd4b39;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-success" href="#" style="font-size: x-large;">FOOD</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index2.html">خضروات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index3.html">مشاوي</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index4.html">سلطات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index5.html">نواشف</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-primary " aria-current="page" href="login.html">تسجيل الدخول</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="login-container">
+        <h2>تسجيل الدخول</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" class="form-control" id="email" placeholder="أدخل بريدك الإلكتروني">
+            </div>
+            <div class="form-group">
+                <label for="password">كلمة المرور</label>
+                <input type="password" class="form-control" id="password" placeholder="أدخل كلمة المرور">
+            </div>
+            <button type="submit" class="btn btn-login btn-block">تسجيل الدخول</button>
+            <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+        </form>
+
+        <div class="social-buttons">
+            <a href="#" class="btn btn-block facebook">
+                <i class="fab fa-facebook-f"></i> تسجيل الدخول باستخدام فيسبوك
+            </a>
+            <a href="#" class="btn btn-block google">
+                <i class="fab fa-google"></i> تسجيل الدخول باستخدام جوجل
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-mhxyUy+yQj3MQFwHfM/DhMgWZYITtm+dHg9c4sH/9Gr3lGj0I1Wm8sKxJrEGBIkfokep0bsHcNlLRCZmyLF2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
